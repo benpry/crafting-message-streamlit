@@ -1,0 +1,46 @@
+run_idx,step,action,new_item,score,inventory_size,ingredients,final_reward,domain
+0,0,"('rock', 'buttons')","('[rock]-[buttons]', 30)",30,5,"[('pinecone', 0), ('wood', 0), ('[rock]-[buttons]', 30)]",100,decorations
+0,1,"('scissors', '[rock]-[buttons]')","('[scissors]-[[rock]-[buttons]]', -30)",0,5,"[('pinecone', 0), ('wood', 0), ('[scissors]-[[rock]-[buttons]]', -30)]",100,decorations
+0,2,"('scissors', '[scissors]-[[rock]-[buttons]]')","('[scissors]-[[scissors]-[[rock]-[buttons]]]', 80)",80,5,"[('pinecone', 0), ('wood', 0), ('[scissors]-[[scissors]-[[rock]-[buttons]]]', 80)]",100,decorations
+0,3,"('frame', '[scissors]-[[scissors]-[[rock]-[buttons]]]')","('[frame]-[[scissors]-[[scissors]-[[rock]-[buttons]]]]', 100)",100,5,"[('pinecone', 0), ('wood', 0), ('[frame]-[[scissors]-[[scissors]-[[rock]-[buttons]]]]', 100)]",100,decorations
+0,4,,,100,5,"[('pinecone', 0), ('wood', 0), ('[frame]-[[scissors]-[[scissors]-[[rock]-[buttons]]]]', 100)]",100,decorations
+1,0,"('flower', 'thread')","('[flower]-[thread]', 30)",30,5,"[('buttons', 0), ('rock', 0), ('[flower]-[thread]', 30)]",100,decorations
+1,1,"('scissors', '[flower]-[thread]')","('[scissors]-[[flower]-[thread]]', 80)",80,5,"[('buttons', 0), ('rock', 0), ('[scissors]-[[flower]-[thread]]', 80)]",100,decorations
+1,2,"('frame', '[scissors]-[[flower]-[thread]]')","('[frame]-[[scissors]-[[flower]-[thread]]]', 100)",100,5,"[('buttons', 0), ('rock', 0), ('[frame]-[[scissors]-[[flower]-[thread]]]', 100)]",100,decorations
+1,3,,,100,5,"[('buttons', 0), ('rock', 0), ('[frame]-[[scissors]-[[flower]-[thread]]]', 100)]",100,decorations
+2,0,"('scissors', 'wood')","('[scissors]-[wood]', -30)",0,6,"[('buttons', 0), ('thread', 0), ('beads', 0), ('[scissors]-[wood]', -30)]",100,decorations
+2,1,"('thread', '[scissors]-[wood]')","('[thread]-[[scissors]-[wood]]', 0)",0,5,"[('buttons', 0), ('beads', 0), ('[thread]-[[scissors]-[wood]]', 0)]",100,decorations
+2,2,"('scissors', '[thread]-[[scissors]-[wood]]')","('[scissors]-[[thread]-[[scissors]-[wood]]]', 80)",80,5,"[('buttons', 0), ('beads', 0), ('[scissors]-[[thread]-[[scissors]-[wood]]]', 80)]",100,decorations
+2,3,"('frame', '[scissors]-[[thread]-[[scissors]-[wood]]]')","('[frame]-[[scissors]-[[thread]-[[scissors]-[wood]]]]', 100)",100,5,"[('buttons', 0), ('beads', 0), ('[frame]-[[scissors]-[[thread]-[[scissors]-[wood]]]]', 100)]",100,decorations
+2,4,,,100,5,"[('buttons', 0), ('beads', 0), ('[frame]-[[scissors]-[[thread]-[[scissors]-[wood]]]]', 100)]",100,decorations
+3,0,"('sunflower', 'thread')","('[sunflower]-[thread]', 30)",30,5,"[('bark', 0), ('shell', 0), ('[sunflower]-[thread]', 30)]",100,decorations
+3,1,"('scissors', '[sunflower]-[thread]')","('[scissors]-[[sunflower]-[thread]]', 80)",80,5,"[('bark', 0), ('shell', 0), ('[scissors]-[[sunflower]-[thread]]', 80)]",100,decorations
+3,2,"('frame', '[scissors]-[[sunflower]-[thread]]')","('[frame]-[[scissors]-[[sunflower]-[thread]]]', 100)",100,5,"[('bark', 0), ('shell', 0), ('[frame]-[[scissors]-[[sunflower]-[thread]]]', 100)]",100,decorations
+3,3,,,100,5,"[('bark', 0), ('shell', 0), ('[frame]-[[scissors]-[[sunflower]-[thread]]]', 100)]",100,decorations
+4,0,"('feather', 'thread')","('[feather]-[thread]', 30)",30,5,"[('bark', 0), ('rock', 0), ('[feather]-[thread]', 30)]",100,decorations
+4,1,"('scissors', '[feather]-[thread]')","('[scissors]-[[feather]-[thread]]', 80)",80,5,"[('bark', 0), ('rock', 0), ('[scissors]-[[feather]-[thread]]', 80)]",100,decorations
+4,2,"('frame', '[scissors]-[[feather]-[thread]]')","('[frame]-[[scissors]-[[feather]-[thread]]]', 100)",100,5,"[('bark', 0), ('rock', 0), ('[frame]-[[scissors]-[[feather]-[thread]]]', 100)]",100,decorations
+4,3,,,100,5,"[('bark', 0), ('rock', 0), ('[frame]-[[scissors]-[[feather]-[thread]]]', 100)]",100,decorations
+5,0,"('scissors', 'acorn')","('[scissors]-[acorn]', -30)",0,6,"[('yarn', 0), ('wood', 0), ('rock', 0), ('[scissors]-[acorn]', -30)]",100,decorations
+5,1,"('yarn', '[scissors]-[acorn]')","('[yarn]-[[scissors]-[acorn]]', 0)",0,5,"[('wood', 0), ('rock', 0), ('[yarn]-[[scissors]-[acorn]]', 0)]",100,decorations
+5,2,"('scissors', '[yarn]-[[scissors]-[acorn]]')","('[scissors]-[[yarn]-[[scissors]-[acorn]]]', 80)",80,5,"[('wood', 0), ('rock', 0), ('[scissors]-[[yarn]-[[scissors]-[acorn]]]', 80)]",100,decorations
+5,3,"('frame', '[scissors]-[[yarn]-[[scissors]-[acorn]]]')","('[frame]-[[scissors]-[[yarn]-[[scissors]-[acorn]]]]', 100)",100,5,"[('wood', 0), ('rock', 0), ('[frame]-[[scissors]-[[yarn]-[[scissors]-[acorn]]]]', 100)]",100,decorations
+5,4,,,100,5,"[('wood', 0), ('rock', 0), ('[frame]-[[scissors]-[[yarn]-[[scissors]-[acorn]]]]', 100)]",100,decorations
+6,0,"('scissors', 'wood')","('[scissors]-[wood]', -30)",0,6,"[('yarn', 0), ('cardboard', 0), ('acorn', 0), ('[scissors]-[wood]', -30)]",100,decorations
+6,1,"('yarn', '[scissors]-[wood]')","('[yarn]-[[scissors]-[wood]]', 0)",0,5,"[('cardboard', 0), ('acorn', 0), ('[yarn]-[[scissors]-[wood]]', 0)]",100,decorations
+6,2,"('scissors', '[yarn]-[[scissors]-[wood]]')","('[scissors]-[[yarn]-[[scissors]-[wood]]]', 80)",80,5,"[('cardboard', 0), ('acorn', 0), ('[scissors]-[[yarn]-[[scissors]-[wood]]]', 80)]",100,decorations
+6,3,"('frame', '[scissors]-[[yarn]-[[scissors]-[wood]]]')","('[frame]-[[scissors]-[[yarn]-[[scissors]-[wood]]]]', 100)",100,5,"[('cardboard', 0), ('acorn', 0), ('[frame]-[[scissors]-[[yarn]-[[scissors]-[wood]]]]', 100)]",100,decorations
+6,4,,,100,5,"[('cardboard', 0), ('acorn', 0), ('[frame]-[[scissors]-[[yarn]-[[scissors]-[wood]]]]', 100)]",100,decorations
+7,0,"('scissors', 'rock')","('[scissors]-[rock]', -30)",0,6,"[('cardboard', 0), ('shell', 0), ('acorn', 0), ('[scissors]-[rock]', -30)]",100,decorations
+7,1,"('cardboard', '[scissors]-[rock]')","('[cardboard]-[[scissors]-[rock]]', 0)",0,5,"[('shell', 0), ('acorn', 0), ('[cardboard]-[[scissors]-[rock]]', 0)]",100,decorations
+7,2,"('scissors', '[cardboard]-[[scissors]-[rock]]')","('[scissors]-[[cardboard]-[[scissors]-[rock]]]', 80)",80,5,"[('shell', 0), ('acorn', 0), ('[scissors]-[[cardboard]-[[scissors]-[rock]]]', 80)]",100,decorations
+7,3,"('frame', '[scissors]-[[cardboard]-[[scissors]-[rock]]]')","('[frame]-[[scissors]-[[cardboard]-[[scissors]-[rock]]]]', 100)",100,5,"[('shell', 0), ('acorn', 0), ('[frame]-[[scissors]-[[cardboard]-[[scissors]-[rock]]]]', 100)]",100,decorations
+7,4,,,100,5,"[('shell', 0), ('acorn', 0), ('[frame]-[[scissors]-[[cardboard]-[[scissors]-[rock]]]]', 100)]",100,decorations
+8,0,"('flower', 'thread')","('[flower]-[thread]', 30)",30,5,"[('pinecone', 0), ('shell', 0), ('[flower]-[thread]', 30)]",100,decorations
+8,1,"('scissors', '[flower]-[thread]')","('[scissors]-[[flower]-[thread]]', 80)",80,5,"[('pinecone', 0), ('shell', 0), ('[scissors]-[[flower]-[thread]]', 80)]",100,decorations
+8,2,"('frame', '[scissors]-[[flower]-[thread]]')","('[frame]-[[scissors]-[[flower]-[thread]]]', 100)",100,5,"[('pinecone', 0), ('shell', 0), ('[frame]-[[scissors]-[[flower]-[thread]]]', 100)]",100,decorations
+8,3,,,100,5,"[('pinecone', 0), ('shell', 0), ('[frame]-[[scissors]-[[flower]-[thread]]]', 100)]",100,decorations
+9,0,"('leaf', 'paper')","('[leaf]-[paper]', 30)",30,5,"[('acorn', 0), ('wood', 0), ('[leaf]-[paper]', 30)]",100,decorations
+9,1,"('scissors', '[leaf]-[paper]')","('[scissors]-[[leaf]-[paper]]', 80)",80,5,"[('acorn', 0), ('wood', 0), ('[scissors]-[[leaf]-[paper]]', 80)]",100,decorations
+9,2,"('frame', '[scissors]-[[leaf]-[paper]]')","('[frame]-[[scissors]-[[leaf]-[paper]]]', 100)",100,5,"[('acorn', 0), ('wood', 0), ('[frame]-[[scissors]-[[leaf]-[paper]]]', 100)]",100,decorations
+9,3,,,100,5,"[('acorn', 0), ('wood', 0), ('[frame]-[[scissors]-[[leaf]-[paper]]]', 100)]",100,decorations

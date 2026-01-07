@@ -1,0 +1,31 @@
+run_idx,step,action,new_item,score,inventory_size,ingredients,final_reward,domain
+0,0,"('mandrake root', 'bat wing')","('[mandrake root]-[bat wing]', -60)",0,5,"[('volcanic fumes', 0), ('obsidian', 0), ('[mandrake root]-[bat wing]', -60)]",100,potions
+0,1,"('vial', '[mandrake root]-[bat wing]')","('[vial]-[[mandrake root]-[bat wing]]', 100)",100,5,"[('volcanic fumes', 0), ('obsidian', 0), ('[vial]-[[mandrake root]-[bat wing]]', 100)]",100,potions
+0,2,,,100,5,"[('volcanic fumes', 0), ('obsidian', 0), ('[vial]-[[mandrake root]-[bat wing]]', 100)]",100,potions
+1,0,"('bat wing', 'sunstone')","('[bat wing]-[sunstone]', -60)",0,5,"[('basilisk venom', 0), ('mushroom', 0), ('[bat wing]-[sunstone]', -60)]",100,potions
+1,1,"('vial', '[bat wing]-[sunstone]')","('[vial]-[[bat wing]-[sunstone]]', 100)",100,5,"[('basilisk venom', 0), ('mushroom', 0), ('[vial]-[[bat wing]-[sunstone]]', 100)]",100,potions
+1,2,,,100,5,"[('basilisk venom', 0), ('mushroom', 0), ('[vial]-[[bat wing]-[sunstone]]', 100)]",100,potions
+2,0,"('unicorn horn', 'frog leg')","('[unicorn horn]-[frog leg]', -60)",0,5,"[('tree sap', 0), ('ghostly vapor', 0), ('[unicorn horn]-[frog leg]', -60)]",100,potions
+2,1,"('vial', '[unicorn horn]-[frog leg]')","('[vial]-[[unicorn horn]-[frog leg]]', 100)",100,5,"[('tree sap', 0), ('ghostly vapor', 0), ('[vial]-[[unicorn horn]-[frog leg]]', 100)]",100,potions
+2,2,,,100,5,"[('tree sap', 0), ('ghostly vapor', 0), ('[vial]-[[unicorn horn]-[frog leg]]', 100)]",100,potions
+3,0,"('mandrake root', 'obsidian')","('[mandrake root]-[obsidian]', -60)",0,5,"[('basilisk venom', 0), ('ghostly vapor', 0), ('[mandrake root]-[obsidian]', -60)]",100,potions
+3,1,"('vial', '[mandrake root]-[obsidian]')","('[vial]-[[mandrake root]-[obsidian]]', 100)",100,5,"[('basilisk venom', 0), ('ghostly vapor', 0), ('[vial]-[[mandrake root]-[obsidian]]', 100)]",100,potions
+3,2,,,100,5,"[('basilisk venom', 0), ('ghostly vapor', 0), ('[vial]-[[mandrake root]-[obsidian]]', 100)]",100,potions
+4,0,"('dragon scale', 'amber')","('[dragon scale]-[amber]', -60)",0,5,"[('bat wing', 0), ('dandelion', 0), ('[dragon scale]-[amber]', -60)]",100,potions
+4,1,"('vial', '[dragon scale]-[amber]')","('[vial]-[[dragon scale]-[amber]]', 100)",100,5,"[('bat wing', 0), ('dandelion', 0), ('[vial]-[[dragon scale]-[amber]]', 100)]",100,potions
+4,2,,,100,5,"[('bat wing', 0), ('dandelion', 0), ('[vial]-[[dragon scale]-[amber]]', 100)]",100,potions
+5,0,"('basilisk venom', 'honey nectar')","('[basilisk venom]-[honey nectar]', 40)",40,5,"[('amber', 0), ('ghostly vapor', 0), ('[basilisk venom]-[honey nectar]', 40)]",100,potions
+5,1,"('filter', '[basilisk venom]-[honey nectar]')","('[filter]-[[basilisk venom]-[honey nectar]]', 100)",100,5,"[('amber', 0), ('ghostly vapor', 0), ('[filter]-[[basilisk venom]-[honey nectar]]', 100)]",100,potions
+5,2,,,100,5,"[('amber', 0), ('ghostly vapor', 0), ('[filter]-[[basilisk venom]-[honey nectar]]', 100)]",100,potions
+6,0,"('kraken ink', 'tree sap')","('[kraken ink]-[tree sap]', 40)",40,5,"[('mushroom', 0), ('basilisk venom', 0), ('[kraken ink]-[tree sap]', 40)]",100,potions
+6,1,"('filter', '[kraken ink]-[tree sap]')","('[filter]-[[kraken ink]-[tree sap]]', 100)",100,5,"[('mushroom', 0), ('basilisk venom', 0), ('[filter]-[[kraken ink]-[tree sap]]', 100)]",100,potions
+6,2,,,100,5,"[('mushroom', 0), ('basilisk venom', 0), ('[filter]-[[kraken ink]-[tree sap]]', 100)]",100,potions
+7,0,"('kraken ink', 'honey nectar')","('[kraken ink]-[honey nectar]', 40)",40,5,"[('dandelion', 0), (""dragon's breath"", 0), ('[kraken ink]-[honey nectar]', 40)]",100,potions
+7,1,"('filter', '[kraken ink]-[honey nectar]')","('[filter]-[[kraken ink]-[honey nectar]]', 100)",100,5,"[('dandelion', 0), (""dragon's breath"", 0), ('[filter]-[[kraken ink]-[honey nectar]]', 100)]",100,potions
+7,2,,,100,5,"[('dandelion', 0), (""dragon's breath"", 0), ('[filter]-[[kraken ink]-[honey nectar]]', 100)]",100,potions
+8,0,"('unicorn horn', 'dandelion')","('[unicorn horn]-[dandelion]', -60)",0,5,"[('morning dew', 0), ('tree sap', 0), ('[unicorn horn]-[dandelion]', -60)]",100,potions
+8,1,"('vial', '[unicorn horn]-[dandelion]')","('[vial]-[[unicorn horn]-[dandelion]]', 100)",100,5,"[('morning dew', 0), ('tree sap', 0), ('[vial]-[[unicorn horn]-[dandelion]]', 100)]",100,potions
+8,2,,,100,5,"[('morning dew', 0), ('tree sap', 0), ('[vial]-[[unicorn horn]-[dandelion]]', 100)]",100,potions
+9,0,"('basilisk venom', 'volcanic fumes')","('[basilisk venom]-[volcanic fumes]', -60)",0,5,"[('dragon scale', 0), ('rose petal', 0), ('[basilisk venom]-[volcanic fumes]', -60)]",100,potions
+9,1,"('filter', '[basilisk venom]-[volcanic fumes]')","('[filter]-[[basilisk venom]-[volcanic fumes]]', 100)",100,5,"[('dragon scale', 0), ('rose petal', 0), ('[filter]-[[basilisk venom]-[volcanic fumes]]', 100)]",100,potions
+9,2,,,100,5,"[('dragon scale', 0), ('rose petal', 0), ('[filter]-[[basilisk venom]-[volcanic fumes]]', 100)]",100,potions

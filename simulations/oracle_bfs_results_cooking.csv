@@ -1,0 +1,51 @@
+run_idx,step,action,new_item,score,inventory_size,ingredients,final_reward,domain
+0,0,"('water', 'wheat')","('[water]-[wheat]', 0)",0,6,"[('potato', 0), ('raw meat', 0), ('mushroom', 0), ('[water]-[wheat]', 0)]",100,cooking
+0,1,"('potato', 'raw meat')","('[potato]-[raw meat]', 20)",20,5,"[('mushroom', 0), ('[water]-[wheat]', 0), ('[potato]-[raw meat]', 20)]",100,cooking
+0,2,"('[water]-[wheat]', '[potato]-[raw meat]')","('[[water]-[wheat]]-[[potato]-[raw meat]]', 40)",40,4,"[('mushroom', 0), ('[[water]-[wheat]]-[[potato]-[raw meat]]', 40)]",100,cooking
+0,3,"('stove', '[[water]-[wheat]]-[[potato]-[raw meat]]')","('[stove]-[[[water]-[wheat]]-[[potato]-[raw meat]]]', 100)",100,4,"[('mushroom', 0), ('[stove]-[[[water]-[wheat]]-[[potato]-[raw meat]]]', 100)]",100,cooking
+0,4,,,100,4,"[('mushroom', 0), ('[stove]-[[[water]-[wheat]]-[[potato]-[raw meat]]]', 100)]",100,cooking
+1,0,"('water', 'corn')","('[water]-[corn]', 0)",0,6,"[('potato', 0), ('raw meat', 0), ('lettuce', 0), ('[water]-[corn]', 0)]",100,cooking
+1,1,"('potato', 'raw meat')","('[potato]-[raw meat]', 20)",20,5,"[('lettuce', 0), ('[water]-[corn]', 0), ('[potato]-[raw meat]', 20)]",100,cooking
+1,2,"('[water]-[corn]', '[potato]-[raw meat]')","('[[water]-[corn]]-[[potato]-[raw meat]]', 40)",40,4,"[('lettuce', 0), ('[[water]-[corn]]-[[potato]-[raw meat]]', 40)]",100,cooking
+1,3,"('stove', '[[water]-[corn]]-[[potato]-[raw meat]]')","('[stove]-[[[water]-[corn]]-[[potato]-[raw meat]]]', 100)",100,4,"[('lettuce', 0), ('[stove]-[[[water]-[corn]]-[[potato]-[raw meat]]]', 100)]",100,cooking
+1,4,,,100,4,"[('lettuce', 0), ('[stove]-[[[water]-[corn]]-[[potato]-[raw meat]]]', 100)]",100,cooking
+2,0,"('water', 'corn')","('[water]-[corn]', 0)",0,6,"[('lettuce', 0), ('raw meat', 0), ('raw fish', 0), ('[water]-[corn]', 0)]",100,cooking
+2,1,"('lettuce', 'raw meat')","('[raw meat]-[lettuce]', 20)",20,5,"[('raw fish', 0), ('[water]-[corn]', 0), ('[raw meat]-[lettuce]', 20)]",100,cooking
+2,2,"('[water]-[corn]', '[raw meat]-[lettuce]')","('[[water]-[corn]]-[[raw meat]-[lettuce]]', 40)",40,4,"[('raw fish', 0), ('[[water]-[corn]]-[[raw meat]-[lettuce]]', 40)]",100,cooking
+2,3,"('stove', '[[water]-[corn]]-[[raw meat]-[lettuce]]')","('[stove]-[[[water]-[corn]]-[[raw meat]-[lettuce]]]', 100)",100,4,"[('raw fish', 0), ('[stove]-[[[water]-[corn]]-[[raw meat]-[lettuce]]]', 100)]",100,cooking
+2,4,,,100,4,"[('raw fish', 0), ('[stove]-[[[water]-[corn]]-[[raw meat]-[lettuce]]]', 100)]",100,cooking
+3,0,"('water', 'corn')","('[water]-[corn]', 0)",0,6,"[('mushroom', 0), ('raw fish', 0), ('potato', 0), ('[water]-[corn]', 0)]",100,cooking
+3,1,"('mushroom', 'raw fish')","('[mushroom]-[raw fish]', 20)",20,5,"[('potato', 0), ('[water]-[corn]', 0), ('[mushroom]-[raw fish]', 20)]",100,cooking
+3,2,"('[water]-[corn]', '[mushroom]-[raw fish]')","('[[water]-[corn]]-[[mushroom]-[raw fish]]', 40)",40,4,"[('potato', 0), ('[[water]-[corn]]-[[mushroom]-[raw fish]]', 40)]",100,cooking
+3,3,"('stove', '[[water]-[corn]]-[[mushroom]-[raw fish]]')","('[stove]-[[[water]-[corn]]-[[mushroom]-[raw fish]]]', 100)",100,4,"[('potato', 0), ('[stove]-[[[water]-[corn]]-[[mushroom]-[raw fish]]]', 100)]",100,cooking
+3,4,,,100,4,"[('potato', 0), ('[stove]-[[[water]-[corn]]-[[mushroom]-[raw fish]]]', 100)]",100,cooking
+4,0,"('water', 'corn')","('[water]-[corn]', 0)",0,6,"[('potato', 0), ('raw meat', 0), ('wheat', 0), ('[water]-[corn]', 0)]",100,cooking
+4,1,"('potato', 'raw meat')","('[potato]-[raw meat]', 20)",20,5,"[('wheat', 0), ('[water]-[corn]', 0), ('[potato]-[raw meat]', 20)]",100,cooking
+4,2,"('[water]-[corn]', '[potato]-[raw meat]')","('[[water]-[corn]]-[[potato]-[raw meat]]', 40)",40,4,"[('wheat', 0), ('[[water]-[corn]]-[[potato]-[raw meat]]', 40)]",100,cooking
+4,3,"('stove', '[[water]-[corn]]-[[potato]-[raw meat]]')","('[stove]-[[[water]-[corn]]-[[potato]-[raw meat]]]', 100)",100,4,"[('wheat', 0), ('[stove]-[[[water]-[corn]]-[[potato]-[raw meat]]]', 100)]",100,cooking
+4,4,,,100,4,"[('wheat', 0), ('[stove]-[[[water]-[corn]]-[[potato]-[raw meat]]]', 100)]",100,cooking
+5,0,"('water', 'rice')","('[water]-[rice]', 0)",0,6,"[('tomato', 0), ('raw fish', 0), ('wheat', 0), ('[water]-[rice]', 0)]",100,cooking
+5,1,"('tomato', 'raw fish')","('[tomato]-[raw fish]', 20)",20,5,"[('wheat', 0), ('[water]-[rice]', 0), ('[tomato]-[raw fish]', 20)]",100,cooking
+5,2,"('[water]-[rice]', '[tomato]-[raw fish]')","('[[water]-[rice]]-[[tomato]-[raw fish]]', 40)",40,4,"[('wheat', 0), ('[[water]-[rice]]-[[tomato]-[raw fish]]', 40)]",100,cooking
+5,3,"('stove', '[[water]-[rice]]-[[tomato]-[raw fish]]')","('[stove]-[[[water]-[rice]]-[[tomato]-[raw fish]]]', 100)",100,4,"[('wheat', 0), ('[stove]-[[[water]-[rice]]-[[tomato]-[raw fish]]]', 100)]",100,cooking
+5,4,,,100,4,"[('wheat', 0), ('[stove]-[[[water]-[rice]]-[[tomato]-[raw fish]]]', 100)]",100,cooking
+6,0,"('water', 'wheat')","('[water]-[wheat]', 0)",0,6,"[('tomato', 0), ('raw fish', 0), ('raw meat', 0), ('[water]-[wheat]', 0)]",100,cooking
+6,1,"('tomato', 'raw fish')","('[tomato]-[raw fish]', 20)",20,5,"[('raw meat', 0), ('[water]-[wheat]', 0), ('[tomato]-[raw fish]', 20)]",100,cooking
+6,2,"('[water]-[wheat]', '[tomato]-[raw fish]')","('[[water]-[wheat]]-[[tomato]-[raw fish]]', 40)",40,4,"[('raw meat', 0), ('[[water]-[wheat]]-[[tomato]-[raw fish]]', 40)]",100,cooking
+6,3,"('stove', '[[water]-[wheat]]-[[tomato]-[raw fish]]')","('[stove]-[[[water]-[wheat]]-[[tomato]-[raw fish]]]', 100)",100,4,"[('raw meat', 0), ('[stove]-[[[water]-[wheat]]-[[tomato]-[raw fish]]]', 100)]",100,cooking
+6,4,,,100,4,"[('raw meat', 0), ('[stove]-[[[water]-[wheat]]-[[tomato]-[raw fish]]]', 100)]",100,cooking
+7,0,"('water', 'wheat')","('[water]-[wheat]', 0)",0,6,"[('potato', 0), ('raw meat', 0), ('mushroom', 0), ('[water]-[wheat]', 0)]",100,cooking
+7,1,"('potato', 'raw meat')","('[potato]-[raw meat]', 20)",20,5,"[('mushroom', 0), ('[water]-[wheat]', 0), ('[potato]-[raw meat]', 20)]",100,cooking
+7,2,"('[water]-[wheat]', '[potato]-[raw meat]')","('[[water]-[wheat]]-[[potato]-[raw meat]]', 40)",40,4,"[('mushroom', 0), ('[[water]-[wheat]]-[[potato]-[raw meat]]', 40)]",100,cooking
+7,3,"('stove', '[[water]-[wheat]]-[[potato]-[raw meat]]')","('[stove]-[[[water]-[wheat]]-[[potato]-[raw meat]]]', 100)",100,4,"[('mushroom', 0), ('[stove]-[[[water]-[wheat]]-[[potato]-[raw meat]]]', 100)]",100,cooking
+7,4,,,100,4,"[('mushroom', 0), ('[stove]-[[[water]-[wheat]]-[[potato]-[raw meat]]]', 100)]",100,cooking
+8,0,"('water', 'rice')","('[water]-[rice]', 0)",0,6,"[('carrot', 0), ('raw fish', 0), ('potato', 0), ('[water]-[rice]', 0)]",100,cooking
+8,1,"('carrot', 'raw fish')","('[carrot]-[raw fish]', 20)",20,5,"[('potato', 0), ('[water]-[rice]', 0), ('[carrot]-[raw fish]', 20)]",100,cooking
+8,2,"('[water]-[rice]', '[carrot]-[raw fish]')","('[[water]-[rice]]-[[carrot]-[raw fish]]', 40)",40,4,"[('potato', 0), ('[[water]-[rice]]-[[carrot]-[raw fish]]', 40)]",100,cooking
+8,3,"('stove', '[[water]-[rice]]-[[carrot]-[raw fish]]')","('[stove]-[[[water]-[rice]]-[[carrot]-[raw fish]]]', 100)",100,4,"[('potato', 0), ('[stove]-[[[water]-[rice]]-[[carrot]-[raw fish]]]', 100)]",100,cooking
+8,4,,,100,4,"[('potato', 0), ('[stove]-[[[water]-[rice]]-[[carrot]-[raw fish]]]', 100)]",100,cooking
+9,0,"('water', 'corn')","('[water]-[corn]', 0)",0,6,"[('carrot', 0), ('raw meat', 0), ('potato', 0), ('[water]-[corn]', 0)]",100,cooking
+9,1,"('carrot', 'raw meat')","('[carrot]-[raw meat]', 20)",20,5,"[('potato', 0), ('[water]-[corn]', 0), ('[carrot]-[raw meat]', 20)]",100,cooking
+9,2,"('[water]-[corn]', '[carrot]-[raw meat]')","('[[water]-[corn]]-[[carrot]-[raw meat]]', 40)",40,4,"[('potato', 0), ('[[water]-[corn]]-[[carrot]-[raw meat]]', 40)]",100,cooking
+9,3,"('stove', '[[water]-[corn]]-[[carrot]-[raw meat]]')","('[stove]-[[[water]-[corn]]-[[carrot]-[raw meat]]]', 100)",100,4,"[('potato', 0), ('[stove]-[[[water]-[corn]]-[[carrot]-[raw meat]]]', 100)]",100,cooking
+9,4,,,100,4,"[('potato', 0), ('[stove]-[[[water]-[corn]]-[[carrot]-[raw meat]]]', 100)]",100,cooking
