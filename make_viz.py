@@ -190,8 +190,6 @@ def create_scatter_plot(
             color="domain",
             hover_data={
                 "message_wrapped": True,
-                x_col: ":.1f",
-                y_col: ":.1f",
                 "domain_name": True,
                 "chain_id": True,
                 "chain_pos": True,
@@ -207,8 +205,6 @@ def create_scatter_plot(
             y=y_col,
             hover_data={
                 "message_wrapped": True,
-                x_col: ":.1f",
-                y_col: ":.1f",
                 "domain_name": True,
             },
             opacity=0.8,
@@ -267,7 +263,7 @@ def create_scatter_plot(
         hovertemplate="<b>Message:</b><br>%{customdata[0]}<br><br>"
         + f"<b>{x_label}:</b> %{{x:.1f}}<br>"
         + f"<b>{y_label}:</b> %{{y:.1f}}<br>"
-        + "<b>Domain:</b> %{customdata[3]}<br>"
+        + "<b>Domain:</b> %{customdata[1]}<br>"
         + "<extra></extra>",
         selector=dict(mode="markers"),
     )
@@ -295,9 +291,8 @@ def create_chain_pos_plot(df):
         color="domain",
         hover_data={
             "message_wrapped": True,
-            "chain_pos": True,
-            "message_value": ":.1f",
             "domain_name": True,
+            "chain_pos": True,
             "chain_pos_jittered": False,
         },
         opacity=0.6,
@@ -350,9 +345,9 @@ def create_chain_pos_plot(df):
     # Custom hover template for scatter points (with wrapping via <br> tags)
     fig.update_traces(
         hovertemplate="<b>Message:</b><br>%{customdata[0]}<br><br>"
-        + "<b>Chain Position:</b> %{customdata[1]}<br>"
-        + "<b>Message Value:</b> %{customdata[2]:.1f}<br>"
-        + "<b>Domain:</b> %{customdata[3]}<br>"
+        + "<b>Chain Position:</b> %{customdata[2]}<br>"
+        + "<b>Message Value:</b> %{y:.1f}<br>"
+        + "<b>Domain:</b> %{customdata[1]}<br>"
         + "<extra></extra>",
         selector=dict(mode="markers"),
     )
