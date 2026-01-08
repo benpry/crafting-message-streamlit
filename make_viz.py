@@ -422,7 +422,7 @@ def main():
             title="Message Value vs Sender Performance",
             color_by_domain=(selected_domain == "All"),
         )
-        st.plotly_chart(fig_sender, use_container_width=True)
+        st.plotly_chart(fig_sender, width="stretch")
 
         # Correlation info
         valid_data = df_filtered[["sender_avg_score", "message_value"]].dropna()
@@ -450,7 +450,7 @@ def main():
             title="Message Value vs Receiver Performance",
             color_by_domain=(selected_domain == "All"),
         )
-        st.plotly_chart(fig_receiver, use_container_width=True)
+        st.plotly_chart(fig_receiver, width="stretch")
 
         # Correlation info
         valid_data = df_filtered[["receiver_avg_score", "message_value"]].dropna()
@@ -478,7 +478,7 @@ def main():
             title="Message Value vs Message Length",
             color_by_domain=(selected_domain == "All"),
         )
-        st.plotly_chart(fig_length, use_container_width=True)
+        st.plotly_chart(fig_length, width="stretch")
 
         # Correlation info
         valid_data = df_filtered[["message_length", "message_value"]].dropna()
@@ -498,14 +498,14 @@ def main():
         """)
 
         fig_chain = create_chain_pos_plot(df_filtered)
-        st.plotly_chart(fig_chain, use_container_width=True)
+        st.plotly_chart(fig_chain, width="stretch")
 
         # Show mean values by chain position
         means_by_pos = df_filtered.groupby("chain_pos")["message_value"].agg(
             ["mean", "std", "count"]
         )
         means_by_pos.columns = ["Mean Value", "Std Dev", "Count"]
-        st.dataframe(means_by_pos.round(2), use_container_width=True)
+        st.dataframe(means_by_pos.round(2), width="stretch")
 
     with tab5:
         st.header("Full Data Table")
@@ -554,7 +554,7 @@ def main():
 
         st.dataframe(
             df_display,
-            use_container_width=True,
+            width="stretch",
             height=600,
             column_config={
                 "message": st.column_config.TextColumn("Message", width="large"),
